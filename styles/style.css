@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.logo-and-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding: 10px;
+}
+
+.logo {
+    z-index: 150;
+    width: 100%;
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.menu-mobile {
+    cursor: pointer;
+}
+
+.menu {
+    z-index: 100;
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    top: 40px;
+    right: 0;
+}
+
+.menu ul li {
+    list-style: none;
+    text-align: center;
+    padding: 6px 0;
+}
+
+.menu ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.intro-container {
+    padding: 80px 20px;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.services-list div {
+    background-color: darkred;
+    margin: 4px 0;
+    padding: 10px;
+    transform: skew(-8deg);
+    -webkit-transform: skew(-8deg);
+    -o-transform: skew(-8deg);
+    -ms-transform: skew(-8deg);
+    color: white;
+    text-transform: uppercase;
+}
+
+.services-list div:nth-of-type(1) {
+    margin-left: 13px;
+}
+
+
+.services-list div:nth-of-type(2) {
+    margin-left: 6px;
+}
+
+.services-list div:nth-of-type(4) {
+    margin-left: -6px;
+    background-color: #ccc;
+    color: black;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .intro-container {
+        padding: 120px 60px;
+        background-size: 100%;
+    }
+
+    .services-list div p {
+        font-size: 20px;
+    }
+
+    .services-list div:nth-of-type(4) p {
+        font-size: 16px;
+    }
+}
