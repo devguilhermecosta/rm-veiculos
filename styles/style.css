@@ -356,14 +356,6 @@ body, html {
     .container-services-testimonials {
         flex-direction: row;
     }
-
-    .box-services h2 {
-        margin-left: -5%;
-    }
-
-    .box-testimonials h2 {
-        margin-left: -5%;
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -452,5 +444,13 @@ body, html {
 
     .services-list div:nth-of-type(4) p {
         font-size: 25px;
+    }
+
+    .box-services h2 {
+        margin-left: -10%;
+    }
+
+    .box-testimonials h2 {
+        margin-left: -10%;
     }
 }
