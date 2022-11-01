@@ -140,15 +140,15 @@
     </section>
 
     <!-- form contact -->
-    <section>
-        <div class="title">
+    <section class="container-contact">
+        <div class="title min">
             <span></span>
             <h2>entre em contato</h2>
             <span></span>
         </div>
 
         <!-- form contact -->
-        <form action="#" method="get">
+        <form class="form-user" action="#" method="get">
             <!-- name -->
             <div>
                 <input type="text" name="name" id="name" placeholder="nome" required>
@@ -160,7 +160,9 @@
                     <input type="email" name="email" id="email" placeholder="email" required>
                 </div>
                 <!-- phone -->
-                <input type="text" name="phone" id="phone" placeholder="telefone" required>
+                <div>
+                    <input type="text" name="phone" id="phone" placeholder="telefone" required>
+                </div>
             </div>
             <!-- message -->
             <textarea name="message" id="message" cols="30" rows="10" placeholder="mensagem" required></textarea>
