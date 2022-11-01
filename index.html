@@ -29,10 +29,10 @@
             <!-- menu -->
             <nav class="menu" id="menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Venda</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a onclick="to_open()" href="#"><span>Home</span></a></li>
+                    <li><a onclick="to_open()" href="#">Venda</a></li>
+                    <li><a onclick="to_open()" href="#">Sobre</a></li>
+                    <li><a onclick="to_open()" href="#">Contato</a></li>
                 </ul>
             </nav>
         </section>
@@ -40,22 +40,29 @@
 
     <!-- intro -->
     <section class="intro">
-        <!-- intro-container -->
-        <div class="intro-container">
-            <div class="services-list">
-                <div>
-                    <p>consultoria</p>
-                </div>
-                <div>
-                    <p>compra</p>
-                </div>
-                <div>
-                    <p>venda</p>
-                </div>
-                <div>
-                    <p>contato@rmveiculos.com.br</p>
+        <!-- box-container -->
+        <div class="box-container">
+            <!-- intro-container -->
+            <div class="intro-container">
+                <div class="services-list">
+                    <div>
+                        <p>consultoria</p>
+                    </div>
+                    <div>
+                        <p>compra</p>
+                    </div>
+                    <div>
+                        <p>venda</p>
+                    </div>
+                    <div>
+                        <p>contato@rmveiculos.com.br</p>
+                    </div>
                 </div>
             </div>
+        </div>
+        <!-- container-img -->
+        <div class="container-img">
+            <img class="intro-img" src="images/bg.jpg" alt="background">
         </div>
     </section>
     <script src="js/script.js"></script>

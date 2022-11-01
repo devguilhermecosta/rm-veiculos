@@ -3,8 +3,12 @@ var menu = document.getElementById("menu")
 mb.addEventListener("click", to_open)
 
 function to_open() {
-    if (menu.style.display == "block") {
-        menu.style.display = "none"
+    if (window.innerWidth < 768) {
+        if (menu.style.display == "block") {
+            menu.style.display = "none"
+        } else {
+            menu.style.display = "block"
+        }
     } else {
         menu.style.display = "block"
     }
