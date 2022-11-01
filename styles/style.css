@@ -120,6 +120,214 @@ body, html {
     width: 100%;
 }
 
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 2%;
+}
+
+.title span {
+    width: 100%;
+    max-width: 369px;
+    border-top: 2px solid black;
+}
+
+.title h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-style: italic;
+    width: 100%;
+    max-width: 250px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.box-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.car {
+    padding: 0 2%;
+    max-width: 350px;
+}
+
+.car:nth-of-type(2), .car:nth-of-type(3) {
+    display: none;
+}
+
+.car img {
+    width: 100%;
+}
+
+.car h2 {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.car p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.car input[type="button"] {
+    font-size: 18px;
+    padding: 8px;
+    margin-top: 10px;
+    color: white;
+    background-color: #df0606;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.car input[type="button"]:hover {
+    background-color: #ec2323;
+}
+
+.bullets {
+    width: 100%;
+    padding: 5% 0;
+    text-align: center;
+}
+
+.bullets span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bullets span:nth-of-type(1) {
+    background-color: #000000;
+}
+
+.container-services-testimonials {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.box-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3b3b3b;
+    color: white;
+    font-weight: 700;
+    padding: 5%;
+    width: 100%;
+}
+
+.box-services h2 {
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.box-services > div {
+    width: 100%;
+    max-width: 450px;
+}
+
+.box-services > div > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.box-services input[type="button"] {
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #df0606;
+    cursor: pointer;
+}
+
+.box-services ul {
+    padding-right: 10px;
+}
+
+.box-services ul li {
+    list-style: none;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+.box-services ul li::before {
+    content: '\2022  ';
+    vertical-align: middle;
+}
+
+.box-testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #df0606;
+    width: 100%;
+}
+
+.box-testimonials > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 5%;
+}
+
+.box-testimonials > div > h2 {
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-bottom: 5%;
+}
+
+.user-tertimonials {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.user-tertimonials p {
+    color: black;
+    font-weight: 700;
+    font-style: italic;
+    padding: 10px 0;
+}
+
+.user-tertimonials div {
+    padding: 10px 0;
+}
+
+.user-tertimonials span:nth-of-type(1)::before {
+    content: '\2770';
+    color: black;
+    margin-right: 15px;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.user-tertimonials  span:nth-of-type(2)::before {
+    content: '\2771';
+    color: black;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 600px) {
     .intro {
         flex-direction: row;
@@ -143,6 +351,18 @@ body, html {
     .container-img {
         background-color: black;
         display: flex;
+    }
+
+    .container-services-testimonials {
+        flex-direction: row;
+    }
+
+    .box-services h2 {
+        margin-left: -5%;
+    }
+
+    .box-testimonials h2 {
+        margin-left: -5%;
     }
 }
 
@@ -174,6 +394,23 @@ body, html {
 
     .services-list div:nth-of-type(4) p {
         font-size: 16px;
+    }
+
+    .title h2 {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .box-gallery {
+        flex-direction: row;
+    }
+
+    .car:nth-of-type(2), .car:nth-of-type(3) {
+        display: block;
+    }
+
+    .bullets {
+        display: none;
     }
 }
 
