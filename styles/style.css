@@ -387,6 +387,44 @@ body, html {
     background-color: #ec2323;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    color: white;
+    font-style: italic;
+    margin-top: 15px;
+    padding: 10px;
+}
+footer nav {
+    padding-bottom: 20px;
+}
+
+footer li {
+    list-style: none;
+    text-align: center;
+    line-height: 1.5;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+footer a > span {
+    color: red;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer span {
+    font-weight: bolder;
+}
+
 @media screen and (min-width: 600px) {
     .intro {
         flex-direction: row;
@@ -418,6 +456,22 @@ body, html {
 
     .box-services, .box-testimonials {
         width: 50%;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2% 0;
+    }
+
+    footer nav, footer p {
+        width: 50%;
+        padding-bottom: 0;
+    }
+
+    footer p {
+        text-align: right;
     }
 }
 
@@ -466,6 +520,15 @@ body, html {
 
     .bullets {
         display: none;
+    }
+
+    footer li {
+        display: inline-block;
+        padding: 0 2%;
+    }
+
+    footer p {
+        padding-right: 2%;
     }
 }
 
