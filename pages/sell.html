@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/sell.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>RM Veículos | Compra</title>
+</head>
+<body class="bd">
+    <!-- header -->
+    <header>
+        <!-- logo and menu -->
+        <section class="logo-and-menu">
+            <!-- logo -->
+            <div class="logo">
+                <img src="../images/logo.jpg" alt="logo">
+            </div>
+            <!-- menu mobile -->
+            <div class="menu-mobile" id="menu-mobile">
+                <img src="../images/menu-mobile.png" alt="menu mobile">
+            </div>
+            <!-- menu -->
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a onclick="to_open()" href="../index.html">Home</a></li>
+                    <li><a onclick="to_open()" href="sell.html"><span>Compra</span></a></li>
+                    <li><a onclick="to_open()" href="#">Venda</a></li>
+                    <li><a onclick="to_open()" href="#">Sobre</a></li>
+                    <li><a onclick="to_open()" href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <!-- sell -->
+    <section class="container-sell" id="container-sell" onclick="test()">
+        <div class="title min">
+            <span></span>
+            <h2>compramos seu veículo</h2>
+            <span></span>
+        </div>
+
+        <!-- form contact -->
+        <form class="form-user" action="#" method="get">
+            <!-- name -->
+            <div>
+                <input type="text" name="name" id="name" placeholder="nome" required>
+            </div>
+            <!-- e-mail and phone -->
+            <div>
+                <!-- e-mail -->
+                <div>
+                    <input type="email" name="email" id="email" placeholder="email" required>
+                </div>
+                <!-- phone -->
+                <div>
+                    <input type="text" name="phone" id="phone" placeholder="telefone" required>
+                </div>
+            </div>
+            <!-- message -->
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="mensagem" required></textarea>
+            <!-- button -->
+            <input type="submit" value="enviar">
+        </form>
+    </section>
+
+    <!-- footer -->
+    <footer class="ft">
+        <!-- menu -->
+        <nav class="footer-menu" id="footer-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="sell.html"><span>Compra</span></a></li>
+                <li><a href="#">Venda</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- details -->
+        <p>Todos os direitos reservados a <span>RM Veículos Especiais</span></p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

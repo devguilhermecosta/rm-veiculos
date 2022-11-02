@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+.bd {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-sell {
+    flex: 1 0 auto;
+    padding: 0 2%;
+}
+
+.ft {
+    flex-shrink: 0;
+}
