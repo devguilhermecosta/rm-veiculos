@@ -1,10 +1,13 @@
 var mb = document.getElementById("menu-mobile")
 var menu = document.getElementById("menu")
-var header = document.getElementById("header")
-var footer = document.getElementById("footer")
-var container_sell = document.getElementById("container-sell")
+var price = document.getElementById("price")
+var filter = document.getElementById("price_filter")
 mb.addEventListener("click", to_open)
 
+
+function alterar() {
+    filter.innerHTML = `R$ ${price.value}`
+}
 
 function to_open() {
     if (window.innerWidth < 768) {
