@@ -66,6 +66,10 @@ main {
     max-width: 200px;
 }
 
+.spf {
+    border-top: 3px solid #E30000;
+}
+
 @media screen and (min-width: 768px) {
     .sph {
         border-bottom: 3px solid #E30000;
