@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bd {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    width: 100%;
+    max-width: 992px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.container-loc-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-contact h2 {
+    width: 100%;
+    max-width: 150px;
+}
+
+.form-contact-2 {
+    width: 100%;
+    max-width: 490px;
+}
+
+.form-contact-2 input {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.form-contact-2 textarea {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    font-style: italic;
+    font-size: 18px;
+    resize: none;
+    border: 1px solid #ccc;
+}
+
+.box-button {
+    text-align: center;
+}
+
+.form-contact-2 input[type="submit"] {
+    font-style: italic;
+    text-transform: uppercase;
+    width: auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: #df0606;
+}
+
+.form-contact-2 input[type="submit"]:hover {
+    background-color: #ec2323;
+}
+
+.box-loc {
+    width: 100%;
+    max-width: 490px;
+}
+
+.box-loc iframe {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .sph {
+        border-bottom: 3px solid #E30000;
+    }
+
+    .container-loc-form {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
