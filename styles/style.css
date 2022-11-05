@@ -145,14 +145,19 @@ body, html {
 
 .box-gallery {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.radio {
+    display: none;
+}
+
 .car {
     padding: 0 2%;
+    width: 100%;
     max-width: 350px;
+    transition: all 2s ease-in-out;
 }
 
 .car:nth-of-type(2), .car:nth-of-type(3) {
@@ -194,17 +199,29 @@ body, html {
     text-align: center;
 }
 
-.bullets span {
+.btn {
     display: inline-block;
     width: 16px;
     height: 16px;
-    background-color: #ccc;
+    border: 1px solid #000000;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.bullets span:nth-of-type(1) {
-    background-color: #000000;
+#radio2:checked ~ .car:nth-of-type(1) {
+    display: none;
+}
+
+#radio2:checked ~ .car:nth-of-type(2) {
+    display: block;
+}
+
+#radio3:checked ~ .car:nth-of-type(1), .car:nth-of-type(2) {
+    display: none;
+}
+
+#radio3:checked ~ .car:nth-of-type(3) {
+    display: block;
 }
 
 .container-services-testimonials {
